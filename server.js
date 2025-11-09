@@ -163,6 +163,10 @@ io.on("connection", (socket) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.send("✅ Video Signal Server is live on Render!");
+});
+
 // ----------------- START SERVER -----------------
 server.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
